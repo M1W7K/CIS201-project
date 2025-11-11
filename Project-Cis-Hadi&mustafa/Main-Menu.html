@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aleefah - Home Page</title>
+    <link rel="stylesheet" href="style (2).css">
+    <script src="JS.js"></script>
+
+    <style>
+        .hero-section {
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            flex-wrap: wrap-reverse; 
+            padding: 60px 40px;
+            gap: 40px;
+            min-height: 70vh;
+        }
+
+        .hero-text {
+            flex: 1; 
+            max-width: 600px;
+            min-width: 300px;
+        }
+
+        .hero-text h1 {
+            font-size: 3.5em; 
+            font-weight: 700;
+            color: #333;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .hero-text p {
+            font-size: 1.2em; 
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .hero-button {
+            display: inline-block;
+            background-color: #007bff; 
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 1.1em;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .hero-button:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero-image {
+            flex: 1; 
+            max-width: 500px;
+            min-width: 300px;
+        }
+
+        .hero-image img {
+            width: 100%; 
+            height: auto; 
+            border-radius: 15px; 
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+        
+        body.dark-mode .hero-text h1 {
+            color: #eee;
+        }
+        body.dark-mode .hero-text p {
+            color: #ccc;
+        }
+
+    </style>
+    </head>
+     <body>
+         <button onclick="myFunction()" class="dark-mode-toggle">dark mode switch</button>
+         
+         <div class="navbar">
+          <ul>
+             <li><a href="Main-Menu.html">Main Menu</a></li>
+             <li><a href="Goodies.html">Goodies</a></li>
+             <li><a href="about.html">About Aleefah</a></li>
+             <li><a href="contact.html">Contact Aleefah</a></li>
+          </ul>
+      </div>
+
+       <div class="hero-section">
+           
+           <div class="hero-text">
+                <h1>Welcome to Aleefah</h1>
+                <p>At aleefah, we offer a wonderful selection of pet supplies and treats, from all your favorite brands to special toys your furry friend will love.</p>
+                <p>Click the button to find your best friend's new favorite toy!</p>
+                
+                <a href="Goodies.html" class="hero-button">Shop All Goodies</a>
+           </div>
+
+           <div class="hero-image">
+                <img src="imgs/aleefah-logo.jpg" alt="Aleefah Pet Store Logo">
+           </div>
+
+       </div>
+       <div class="footer">
+           <footer>
+            <p>© Aleefah - Your Pet's Happy Place</p>
+           </footer>
+        </div>
+
+     </body>
+     </html>
