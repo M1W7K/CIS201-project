@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aleefah - About Us</title> 
+    <link rel="stylesheet" href="style (2).css">
+     <script src="JS.js"></script>
+
+    <style>
+        .banner-image {
+            /* We will move the main image sizing here */
+            /* Removed width and height from here for now */
+        }
+
+        /* This container will hold the new cards */
+        .about-container {
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: center; 
+            gap: 20px; 
+            padding: 40px 20px; 
+        }
+
+        /* This is the new "frosted glass" box for your text */
+        .info-card {
+            background-color: rgba(255, 255, 255, 0.85); 
+            backdrop-filter: blur(5px);
+            border: 1px solid #ddd;
+            border-radius: 15px; 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            max-width: 400px; 
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .info-card:hover {
+            transform: translateY(-5px) scale(1.03);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .info-card h2, .info-card h3 {
+            font-size: 1.8em;
+            color: #333;
+            margin-top: 0;
+            border-bottom: 2px solid #007bff; 
+            padding-bottom: 5px;
+        }
+
+        .info-card p {
+            font-size: 1em;
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        /* Dark mode compatibility for the new cards */
+        body.dark-mode .info-card {
+            background-color: rgba(51, 51, 51, 0.85); 
+            border-color: #555;
+        }
+        body.dark-mode .info-card h2, 
+        body.dark-mode .info-card h3 {
+            color: #eee;
+            border-bottom-color: #4dabf7; 
+        }
+        body.dark-mode .info-card p {
+            color: #ccc;
+        }
+
+    </style>
+    </head>
+<body>
+    <button onclick="myFunction()" class="dark-mode-toggle">dark mode switch</button>
+
+    <div class="navbar">
+        <ul>
+            <li><a href="Main-Menu.html">Main Menu</a></li>
+            <li><a href="Goodies.html">Goodies</a></li>
+            <li><a href="about.html">About Aleefah</a></li>
+            <li><a href="contact.html">Contact Aleefah</a></li>
+        </ul>
+    </div>
+
+    <img src="imgs/Banner.png" alt="Happy pets playing" class="banner-image">
+
+    <div class="about-container">
+
+        <div class="info-card">
+            <h2>Who are we</h2>
+            <p>We're a student-run pet store dedicated to making pet happiness accessible for all. Whether your furry friend needs toys, treats, or care supplies, we provide a variety of goodies to explore.</p>
+        </div>
+
+        <div class="info-card">
+            <h3>Our Mission</h3>
+            <p>Our mission is simple: provide pet supplies to everyone at affordable prices, making it easy for anyone to find their pet's next toy. We believe in the power of quality products to entertain, comfort, and delight pets.</p>
+        </div>
+
+        <div class="info-card">
+            <h3>Why Choose Us?</h3>
+            <p>As a student project, we're passionate about building a community of pet people. We offer a collection of toys and treats for all kinds of pets, and our goal is to provide a welcoming spot for you and your best friend.</p>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <footer>
+          <p>© Aleefah - Your Pet's Happy Place</p>
+        </footer>
+    </div>
+
+</body>
+</html>
